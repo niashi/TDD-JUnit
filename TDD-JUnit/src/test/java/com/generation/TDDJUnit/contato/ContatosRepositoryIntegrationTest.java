@@ -1,4 +1,4 @@
-package com.generation.TDDJUnit.repository;
+package com.generation.TDDJUnit.contato;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -8,6 +8,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.generation.TDDJUnit.model.ContatoModel;
+import com.generation.TDDJUnit.repository.ContatoRepository;
 
 
 @RunWith(SpringRunner.class)
@@ -48,4 +49,5 @@ public class ContatosRepositoryIntegrationTest {
 		contato.setNome(null);
 		contatoRepository.save(contato);
 	}
+	
 }
